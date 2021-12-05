@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@model Entro.Models.ViewModels.HomeRelated; 
+
+<div class="backgro_mh">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heding">
+                    <h2>About</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- about  -->
+<div id="about" class="about">
+    <div class="container">
+        <div class="row display_boxflex">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="about-box">
+                    <h2>@Model.about.Title</h2>
+                    <p>
+                        @Model.about.Content
+                    </p>
+                    <a href="Javascript:void(0)">Read More</a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="about-box">
+                    <figure><img src="images/@Model.about.Image" alt="#" /></figure>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- end abouts -->
